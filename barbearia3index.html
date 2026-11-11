@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-BR" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Dom Pietro Sparapani | Barbearia Executiva</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: { 400: '#F3E5AB', 500: '#D4AF37', 600: '#AA7C11', 700: '#8B6508' },
+                        dark: { 900: '#0B0C10', 800: '#14161D', 700: '#1F232D', 600: '#2A2F3D' }
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0B0C10; color: #E5E7EB; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .gold-text { background: linear-gradient(135deg, #FFF5C0 0%, #D4AF37 50%, #AA7C11 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-[#0B0C10] text-gray-200">
+
+    <!-- Header / Navbar -->
+    <header class="fixed w-full top-0 z-50 bg-[#0B0C10]/95 backdrop-blur-md border-b border-[#D4AF37]/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full border border-[#D4AF37]/40 flex items-center justify-center bg-[#D4AF37]/10">
+                    <span class="font-serif text-[#D4AF37] font-bold text-lg">DP</span>
+                </div>
+                <div>
+                    <span class="font-serif text-lg font-bold tracking-wider text-white block leading-none">DOM PIETRO</span>
+                    <span class="text-[10px] tracking-widest text-[#D4AF37] uppercase">Sparapani</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm uppercase tracking-wider text-gray-300">
+                <a href="#sobre" class="hover:text-[#D4AF37] transition-colors">Sobre</a>
+                <a href="#fachada" class="hover:text-[#D4AF37] transition-colors">A Barbearia</a>
+                <a href="#equipe" class="hover:text-[#D4AF37] transition-colors">Equipe</a>
+                <a href="#servicos" class="hover:text-[#D4AF37] transition-colors">Serviços & Preços</a>
+                <a href="#avaliacoes" class="hover:text-[#D4AF37] transition-colors">Avaliações</a>
+                <a href="#agendamento" class="px-5 py-2.5 bg-gradient-to-r from-[#AA7C11] to-[#D4AF37] text-black font-semibold rounded hover:brightness-110 transition-all shadow-lg">Agendar Agora</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen pt-32 flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block px-4 py-1.5 rounded-full border border-[#D4AF37]/30 bg-[#D4AF37]/10 text-[#D4AF37] text-xs font-semibold uppercase tracking-widest mb-6">
+                Barbearia Executiva & Experience
+            </span>
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Mais do que um corte,<br><span class="gold-text">uma experiência.</span>
+            </h1>
+            <p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto mb-6 font-light">
+                Presença, confiança e a sensação de se sentir bem consigo mesmo num ambiente executivo pensado para o homem moderno.
+            </p>
+            <div class="mb-8 flex justify-center">
+                <a href="https://maps.google.com/?q=Barbearia+Dom+Pietro+Sparapani+256" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-[#14161D] border border-[#D4AF37]/40 rounded-full text-[#F3E5AB] font-medium text-sm hover:bg-[#D4AF37]/10 transition-all shadow-lg">
+                    <i class="fa-solid fa-location-dot text-[#D4AF37]"></i> Ver no Google Maps (Nº 256) <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i>
+                </a>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#agendamento" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-[#AA7C11] to-[#D4AF37] text-black font-bold rounded shadow-lg hover:scale-105 transition-all">
+                    <i class="fa-brands fa-whatsapp mr-2"></i> Agendar pelo WhatsApp
+                </a>
+                <a href="#servicos" class="w-full sm:w-auto px-8 py-4 border border-[#D4AF37]/45 text-[#F3E5AB] font-semibold rounded hover:bg-[#D4AF37]/10 transition-all">
+                    Ver Tabela de Preços
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre & Horários -->
+    <section id="sobre" class="py-20 bg-[#14161D]/50 border-y border-[#D4AF37]/10">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="font-serif text-3xl font-bold text-white mb-6 text-center">Barbearia Dom Pietro Sparapani</h2>
+            <div class="space-y-4 text-gray-300 font-light leading-relaxed max-w-3xl mx-auto text-center mb-12">
+                <p>Na Dom Pietro, acreditamos que cuidar da aparência vai muito além de um corte de cabelo ou de uma barba bem feita. É sobre presença, confiança e a experiência de se sentir bem consigo mesmo.</p>
+                <p>Somos uma Barbearia Executiva dedicada a oferecer um atendimento personalizado, em um ambiente sofisticado, acolhedor e pensado para homens que valorizam qualidade, estilo e excelência em cada detalhe.</p>
+                <p>Unimos tradição e modernidade para criar uma experiência única, respeitando a personalidade e o estilo de cada cliente. Aqui, cada atendimento é realizado com atenção, precisão e dedicação.</p>
+            </div>
+
+            <!-- Grid de Horários e Comodidades -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Horários -->
+                <div class="bg-[#0B0C10] p-6 rounded-xl border border-[#D4AF37]/20">
+                    <h3 class="font-serif text-xl font-bold text-[#D4AF37] mb-4 flex items-center gap-2">
+                        <i class="fa-regular fa-clock"></i> Horário de Funcionamento
+                    </h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex justify-between border-b border-gray-800 pb-2">
+                            <span>Segunda a Sexta-Feira:</span>
+                            <strong class="text-white">09:00 às 20:00</strong>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-800 pb-2">
+                            <span>Sábado:</span>
+                            <strong class="text-white">09:00 às 17:00</strong>
+                        </li>
+                        <li class="flex justify-between pb-1">
+                            <span>Domingo:</span>
+                            <strong class="text-red-400">Fechado</strong>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Detalhes & Pagamento -->
+                <div class="bg-[#0B0C10] p-6 rounded-xl border border-[#D4AF37]/20 space-y-4 text-sm">
+                    <h3 class="font-serif text-xl font-bold text-[#D4AF37] mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-info"></i> Comodidades
+                    </h3>
+                    <div>
+                        <strong class="text-[#D4AF37] block mb-1">Localização:</strong>
+                        <a href="https://maps.google.com/?q=Barbearia+Dom+Pietro+Sparapani+256" target="_blank" class="text-gold-400 underline hover:text-white">
+                            Loja Nº 256 (Abrir no Google Maps) <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <strong class="text-[#D4AF37] block mb-1">Pagamento:</strong>
+                        <span class="text-gray-400">Cartão de Crédito, Débito, Dinheiro, PIX</span>
+                    </div>
+                    <div>
+                        <strong class="text-[#D4AF37] block mb-1">Facilidades:</strong>
+                        <span class="text-gray-400">Bar/Lanchonete, Wi-Fi, Estacionamento Grátis, TV</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foto da Fachada -->
+    <section id="fachada" class="py-20 bg-[#0B0C10]">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-[#D4AF37] text-xs font-bold uppercase tracking-widest">Ambiente Oficial</span>
+            <h2 class="font-serif text-3xl font-bold text-white mb-8 mt-1">Nossa Barbearia (Nº 256)</h2>
+            <div class="rounded-2xl overflow-hidden border-2 border-[#D4AF37]/40 shadow-2xl bg-[#14161D]">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop" alt="Fachada Barbearia Dom Pietro" class="w-full h-auto object-cover max-h-[500px]">
+                <div class="p-4 bg-[#14161D] text-gray-300 text-sm flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-[#D4AF37]"></i> Localizado no número 256</span>
+                    <a href="https://maps.google.com/?q=Barbearia+Dom+Pietro+Sparapani+256" target="_blank" class="px-4 py-2 bg-gradient-to-r from-[#AA7C11] to-[#D4AF37] text-black font-bold text-xs rounded hover:brightness-110 transition-all shadow-md">
+                        <i class="fa-solid fa-location-dot mr-1"></i> Abrir Rota no Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipe -->
+    <section id="equipe" class="py-20 bg-[#14161D]/30">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="font-serif text-3xl font-bold text-white mb-12">Nossa Equipe</h2>
+            <div class="grid sm:grid-cols-2 gap-8">
+                <!-- Caio -->
+                <div class="bg-[#14161D] rounded-xl p-6 border border-[#D4AF37]/20">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-[#D4AF37]/40 mb-4 bg-[#1F232D] flex items-center justify-center">
+                        <i class="fa-solid fa-user text-5xl text-[#D4AF37]"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white">CAIO</h3>
+                    <p class="text-[#D4AF37] text-xs uppercase tracking-wider mt-1">Barbeiro Especialista</p>
+                </div>
+                <!-- Gustavo Japa -->
+                <div class="bg-[#14161D] rounded-xl p-6 border border-[#D4AF37]/20">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-[#D4AF37]/40 mb-4 bg-[#1F232D] flex items-center justify-center">
+                        <i class="fa-solid fa-user text-5xl text-[#D4AF37]"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white">Gustavo Japa</h3>
+                    <p class="text-[#D4AF37] text-xs uppercase tracking-wider mt-1">Barbeiro(a)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços & Preços Completos -->
+    <section id="servicos" class="py-20 bg-[#0B0C10]">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="font-serif text-3xl font-bold text-white mb-4 text-center">Todos os Serviços & Preços</h2>
+            <p class="text-gray-400 text-center mb-12 text-sm">Escolha seu serviço favorito e agende direto pelo WhatsApp.</p>
+            
+            <div class="space-y-10">
+                <!-- Cabelo -->
+                <div>
+                    <h3 class="text-[#D4AF37] font-serif text-xl font-bold mb-4 border-b border-[#D4AF37]/20 pb-2">Cabelo</h3>
+                    <div class="space-y-3">
+                        <div class="bg-[#14161D] p-4 rounded-lg border border-[#D4AF37]/10 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-white">Acabamento <span class="text-xs text-gray-400 font-normal">(15min)</span></h4>
+                                <p class="text-xs text-gray-400">Define as linhas da testa, costeletas, orelhas e nuca.</p>
+                            </div>
+                            <div class="text-right min-w-[120px]">
+                                <span class="text-lg font-bold text-[#F3E5AB] block">R$ 20,00</span>
+                                <a href="#agendamento" onclick="selectService('Acabamento - R$ 20,00')" class="text-xs text-[#D4AF37] underline block mt-1">Agendar</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#14161D] p-4 rounded-lg border border-[#D4AF37]/10 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-white">Corte Dom Pietro <span class="text-xs text-gray-400 font-normal">(30min)</span></h4>
+                                <p class="text-xs text-gray-400">Lavagem, tesoura, máquina e acabamento preciso.</p>
+                            </div>
+                            <div class="text-right min-w-[120px]">
+                                <span class="text-lg font-bold text-[#F3E5AB] block">R$ 65,00</span>
+                                <a href="#agendamento" onclick="selectService('Corte Dom Pietro - R$ 65,00')" class="text-xs text-[#D4AF37] underline block mt-1">Agendar</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#14161D] p-4 rounded-lg border border-[#D4AF37]/10 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-white">Corte Máquina <span class="text-xs text-gray-400 font-normal">(30min)</span></h4>
+                                <p class="text-xs text-gray-400">Corte exclusivo com máquinas, praticidade e precisão.</p>
+                            </div>
+                            <div class="text-right min-w-[120px]">
+                                <span class="text-lg font-bold text-[#F3E5AB] block">R$ 50,00</span>
+                                <a href="#agendamento" onclick="selectService('Corte Máquina - R$ 50,00')" class="text-xs text-[#D4AF37] underline block mt-1">Agendar</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#14161D] p-4 rounded-lg border border-[#D4AF37]/10 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-white">Combo Maquina <span class="text-xs text-gray-400 font-normal">(40min)</span></h4>
+                                <p class="text-xs text-gray-400">Corte Máquina + Barba Tradicional.</p>
+                            </div>
+                            <div class="text-right min-w-[120px]">
+                                <span class="text-lg font-bold text-[#F3E5AB] block">R$ 90,00</span>
+                                <a href="#agendamento" onclick="selectService('Combo Maquina - R$ 90,00')" class="text-xs text-[#D4AF37] underline block mt-1">Agendar</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#14161D] p-4 rounded-lg border border-[#D4AF37]/10 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-white">Cabelo e Barba Dom Pietro <span class="text-xs text-gray-400 font-normal">(50min)</span></h4>
+                                <p class="text-xs text-gray-400">Corte Dom Pietro + Barba Dom Pietro.</p>
+                            </div>
+                            <div class="text-right min-w-[120px]">
+                                <span class="text-lg font-bold text-[#F3E5AB] block">R$ 105,00</span>
+                                <a href="#agendamento" onclick="selectService('Cabelo e Barba Dom Pietro - R$ 105,00')" class="text-xs text-[#D4AF37] underline block mt-1">Agendar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Planos Mensais -->
+                <div>
+                    <h3 class="text-[#D4AF37] font-serif text-xl font-bold mb-4 border-b border-[#D4AF37]/20 pb-2">Planos Mensais</h3>
+                    <div class="space-y-3">
+                        <div class="bg-[#14161D] p-4 rounded-lg border border-[#D4AF37]/10 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-white">Mensal Bronze</h4>
+                                <p class="text-xs text-gray-400">4 serviços (4 Cortes Dom Pietro ou 4 Barbas Dom Pietro) em 30 dias.</p>
+                            </div>
+                            <div class="text-right min-w-[120px]">
+                                <span class="text-lg font-bold text-[#F3E5AB] block">R$ 200,00</span>
+                                <a href="#agendamento" onclick="selectService('Mensal Bronze - R$ 200,00')" class="text-xs text-[#D4AF37] underline block mt-1">Agendar</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#14161D] p-4 rounded-lg border border-[#D4AF37]/10 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-white">Mensal Prata</h4>
+                                <p class="text-xs text-gray-400">2 Barbas Dom Pietro + 2 Combos Dom Pietro em 30 dias.</p>
+                            </div>
+                            <div class="text-right min-w-[120px]">
+                                <span class="text-lg font-bold text-[#F3E5AB] block">R$ 280,00</span>
+                                <a href="#agendamento" onclick="selectService('Mensal Prata - R$ 280,00')" class="text-xs text-[#D4AF37] underline block mt-1">Agendar</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#14161D] p-4 rounded-lg border border-[#D4AF37]/10 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-white">Mensal Ouro</h4>
+                                <p class="text-xs text-gray-400">4 Cabelos e Barbas Dom Pietro em 30 dias.</p>
+                            </div>
+                            <div class="text-right min-w-[120px]">
+                                <span class="text-lg font-bold text-[#F3E5AB] block">R$ 320,00</span>
+                                <a href="#agendamento" onclick="selectService('Mensal Ouro - R$ 320,00')" class="text-xs text-[#D4AF37] underline block mt-1">Agendar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Barba e Bigode -->
+                <div>
+                    <h3 class="text-[#D4AF37] font-serif text-xl font-bold mb-4 border-b border-[#D4AF37]/20 pb-2">Barba e Bigode</h3>
+                    <div class="space-y-3">
+                        <div class="bg-[#14161D] p-4 rounded-lg border border-[#D4AF37]/10 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-white">Barba Dom Pietro <span class="text-xs text-gray-400 font-normal">(30min)</span></h4>
+                                <p class="text-xs text-gray-400">Feita com Ozônio para abrir os poros, amolecer e purificar a pele.</p>
+                            </div>
+                            <div class="text-right min-w-[120px]">
+                                <span class="text-lg font-bold text-[#F3E5AB] block">R$ 65,00</span>
+                                <a href="#agendamento" onclick="selectService('Barba Dom Pietro - R$ 65,00')" class="text-xs text-[#D4AF37] underline block mt-1">Agendar</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#14161D] p-4 rounded-lg border border-[#D4AF37]/10 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-white">Barba Tradicional <span class="text-xs text-gray-400 font-normal">(30min)</span></h4>
+                                <p class="text-xs text-gray-400">Feita com Toalha Quente que amacia e facilita a lâmina.</p>
+                            </div>
+                            <div class="text-right min-w-[120px]">
+                                <span class="text-lg font-bold text-[#F3E5AB] block">R$ 50,00</span>
+                                <a href="#agendamento" onclick="selectService('Barba Tradicional - R$ 50,00')" class="text-xs text-[#D4AF37] underline block mt-1">Agendar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Procedimentos Químicos -->
+                <div>
+                    <h3 class="text-[#D4AF37] font-serif text-xl font-bold mb-4 border-b border-[#D4AF37]/20 pb-2">Procedimentos Químicos</h3>
+                    <div class="space-y-3">
+                        <div class="bg-[#14161D] p-4 rounded-lg border border-[#D4AF37]/10 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-white">Hidratação <span class="text-xs text-gray-400 font-normal">(30min)</span></h4>
+                                <p class="text-xs text-gray-400">Tratamento rápido e profundo que repõe água e nutrientes.</p>
+                            </div>
+                            <div class="text-right min-w-[120px]">
+                                <span class="text-lg font-bold text-[#F3E5AB] block">R$ 50,00</span>
+                                <a href="#agendamento" onclick="selectService('Hidratação - R$ 50,00')" class="text-xs text-[#D4AF37] underline block mt-1">Agendar</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#14161D] p-4 rounded-lg border border-[#D4AF37]/10 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-white">Luzes <span class="text-xs text-gray-400 font-normal">(50min)</span></h4>
+                                <p class="text-xs text-gray-400">Iluminação personalizada dos fios para criar pontos de luz.</p>
+                            </div>
+                            <div class="text-right min-w-[120px]">
+                                <span class="text-xs text-gray-400">A partir de</span>
+                                <span class="text-lg font-bold text-[#F3E5AB] block">R$ 150,00</span>
+                                <a href="#agendamento" onclick="selectService('Luzes - A partir de R$ 150,00')" class="text-xs text-[#D4AF37] underline block mt-1">Agendar</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#14161D] p-4 rounded-lg border border-[#D4AF37]/10 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-white">Platinado <span class="text-xs text-gray-400 font-normal">(2h)</span></h4>
+                                <p class="text-xs text-gray-400">Transformação completa para um tom platinado uniforme.</p>
+                            </div>
+                            <div class="text-right min-w-[120px]">
+                                <span class="text-xs text-gray-400">A partir de</span>
+                                <span class="text-lg font-bold text-[#F3E5AB] block">R$ 150,00</span>
+                                <a href="#agendamento" onclick="selectService('Platinado - A partir de R$ 150,00')" class="text-xs text-[#D4AF37] underline block mt-1">Agendar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depilação -->
+                <div>
+                    <h3 class="text-[#D4AF37] font-serif text-xl font-bold mb-4 border-b border-[#D4AF37]/20 pb-2">Depilação</h3>
+                    <div class="space-y-3">
+                        <div class="bg-[#14161D] p-4 rounded-lg border border-[#D4AF37]/10 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-white">Depilação Auricular <span class="text-xs text-gray-400 font-normal">(20min)</span></h4>
+                                <p class="text-xs text-gray-400">Remove os pelos da orelha com cera pela raiz.</p>
+                            </div>
+                            <div class="text-right min-w-[120px]">
+                                <span class="text-lg font-bold text-[#F3E5AB] block">R$ 15,00</span>
+                                <a href="#agendamento" onclick="selectService('Depilação Auricular - R$ 15,00')" class="text-xs text-[#D4AF37] underline block mt-1">Agendar</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#14161D] p-4 rounded-lg border border-[#D4AF37]/10 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-white">Depilação Nasal <span class="text-xs text-gray-400 font-normal">(20min)</span></h4>
+                                <p class="text-xs text-gray-400">Procedimento rápido para remover pelos externos do nariz.</p>
+                            </div>
+                            <div class="text-right min-w-[120px]">
+                                <span class="text-lg font-bold text-[#F3E5AB] block">R$ 15,00</span>
+                                <a href="#agendamento" onclick="selectService('Depilação Nasal - R$ 15,00')" class="text-xs text-[#D4AF37] underline block mt-1">Agendar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Avaliações 5 Estrelas -->
+    <section id="avaliacoes" class="py-20 bg-[#14161D]/50 border-t border-[#D4AF37]/10">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-[#D4AF37] text-xs font-bold uppercase tracking-widest">Feedback dos Clientes</span>
+            <h2 class="font-serif text-3xl font-bold text-white mb-6 mt-1">Avaliações 5 Estrelas</h2>
+            
+            <div class="bg-[#0B0C10] p-8 rounded-2xl border border-[#D4AF37]/30 shadow-xl max-w-2xl mx-auto mb-10">
+                <div class="flex items-center justify-center gap-2 mb-3">
+                    <span class="text-4xl font-bold font-serif text-white">5,0</span>
+                    <div class="text-[#D4AF37] text-lg">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm mb-6">Baseado em 17 avaliações reais de clientes satisfeitos[cite: 12].</p>
+                
+                <div class="space-y-4 text-left border-t border-gray-800 pt-6">
+                    <div class="bg-[#14161D] p-4 rounded-xl border border-gray-800">
+                        <div class="flex justify-between items-center mb-1">
+                            <strong class="text-white text-sm">Ale Stronda</strong>
+                            <span class="text-xs text-gray-500">4 dias atrás</span>
+                        </div>
+                        <div class="text-[#D4AF37] text-xs mb-2">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-xs italic">"Atendimento excelente “Caio e Gustavo” Corte com excelência. Uma baita experiência..."[cite: 12]</p>
+                    </div>
+
+                    <div class="bg-[#14161D] p-4 rounded-xl border border-gray-800">
+                        <div class="flex justify-between items-center mb-1">
+                            <strong class="text-white text-sm">Cliente Verificado</strong>
+                        </div>
+                        <div class="text-[#D4AF37] text-xs mb-2">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-xs italic">"Além dos <strong>preços</strong> que são muito bons e justos!"[cite: 12]</p>
+                    </div>
+
+                    <div class="bg-[#14161D] p-4 rounded-xl border border-gray-800">
+                        <div class="flex justify-between items-center mb-1">
+                            <strong class="text-white text-sm">Cliente Verificado</strong>
+                        </div>
+                        <div class="text-[#D4AF37] text-xs mb-2">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-xs italic">"Atendimento perfeito, <strong>tratamento</strong> vip."[cite: 12]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento Top (Formato Original) -->
+    <section id="agendamento" class="py-20 bg-[#0B0C10]">
+        <div class="max-w-xl mx-auto px-4">
+            <div class="bg-[#14161D] p-8 rounded-2xl border border-[#D4AF37]/30 shadow-2xl">
+                <h2 class="font-serif text-2xl font-bold text-white mb-2 text-center">Agendar Horário</h2>
+                <p class="text-xs text-gray-400 text-center mb-6">Preencha os dados para gerar sua mensagem no WhatsApp (Atendimento de Seg a Sáb).</p>
+                <form onsubmit="sendWhatsApp(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-300 mb-1">Seu Nome</label>
+                        <input type="text" id="client-name" required class="w-full bg-[#0B0C10] border border-[#D4AF37]/20 rounded p-3 text-white text-sm" placeholder="Digite seu nome...">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-300 mb-1">Serviço</label>
+                        <select id="service-select" required class="w-full bg-[#0B0C10] border border-[#D4AF37]/20 rounded p-3 text-white text-sm">
+                            <option value="">Selecione o serviço...</option>
+                            <optgroup label="Cabelo">
+                                <option value="Acabamento - R$ 20,00">Acabamento - R$ 20,00</option>
+                                <option value="Corte Dom Pietro - R$ 65,00">Corte Dom Pietro - R$ 65,00</option>
+                                <option value="Corte Máquina - R$ 50,00">Corte Máquina - R$ 50,00</option>
+                                <option value="Combo Maquina - R$ 90,00">Combo Maquina - R$ 90,00</option>
+                                <option value="Cabelo e Barba Dom Pietro - R$ 105,00">Cabelo e Barba Dom Pietro - R$ 105,00</option>
+                            </optgroup>
+                            <optgroup label="Planos Mensais">
+                                <option value="Mensal Bronze - R$ 200,00">Mensal Bronze - R$ 200,00</option>
+                                <option value="Mensal Prata - R$ 280,00">Mensal Prata - R$ 280,00</option>
+                                <option value="Mensal Ouro - R$ 320,00">Mensal Ouro - R$ 320,00</option>
+                            </optgroup>
+                            <optgroup label="Barba e Bigode">
+                                <option value="Barba Dom Pietro - R$ 65,00">Barba Dom Pietro - R$ 65,00</option>
+                                <option value="Barba Tradicional - R$ 50,00">Barba Tradicional - R$ 50,00</option>
+                            </optgroup>
+                            <optgroup label="Procedimentos Químicos">
+                                <option value="Hidratação - R$ 50,00">Hidratação - R$ 50,00</option>
+                                <option value="Luzes - A partir de R$ 150,00">Luzes - A partir de R$ 150,00</option>
+                                <option value="Platinado - A partir de R$ 150,00">Platinado - A partir de R$ 150,00</option>
+                            </optgroup>
+                            <optgroup label="Depilação">
+                                <option value="Depilação Auricular - R$ 15,00">Depilação Auricular - R$ 15,00</option>
+                                <option value="Depilação Nasal - R$ 15,00">Depilação Nasal - R$ 15,00</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-300 mb-1">Barbeiro</label>
+                        <select id="barber-select" class="w-full bg-[#0B0C10] border border-[#D4AF37]/20 rounded p-3 text-white text-sm">
+                            <option value="Caio">Caio</option>
+                            <option value="Gustavo Japa">Gustavo Japa</option>
+                        </select>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-300 mb-1">Data</label>
+                            <input type="date" id="booking-date" required class="w-full bg-[#0B0C10] border border-[#D4AF37]/20 rounded p-3 text-white text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-300 mb-1">Horário</label>
+                            <input type="time" id="booking-time" required class="w-full bg-[#0B0C10] border border-[#D4AF37]/20 rounded p-3 text-white text-sm">
+                        </div>
+                    </div>
+                    <button type="submit" class="w-full py-4 bg-gradient-to-r from-[#AA7C11] to-[#D4AF37] text-black font-bold rounded shadow-lg mt-4 text-sm flex items-center justify-center gap-2 hover:brightness-110 transition-all">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Enviar Agendamento no WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0B0C10] border-t border-[#D4AF37]/20 py-12 text-gray-400 text-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div>
+                <span class="font-serif text-lg font-bold text-white block">DOM PIETRO SPARAPANI</span>
+                <p class="text-xs text-gray-500 mt-1">Localização: Nº 256 (Domingo: Fechado)</p>
+                <p class="text-xs text-[#D4AF37] mt-1"><i class="fa-brands fa-whatsapp"></i> (11) 94081-0038</p>
+            </div>
+            <div class="flex gap-6 text-xl text-gray-400">
+                <a href="https://maps.google.com/?q=Barbearia+Dom+Pietro+Sparapani+256" target="_blank" class="hover:text-[#D4AF37]" title="Ver no Google Maps"><i class="fa-solid fa-location-dot"></i></a>
+                <a href="https://wa.me/5511940810038" target="_blank" class="hover:text-[#D4AF37]" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <p class="text-xs text-gray-500">© 2026 Barbearia Dom Pietro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function selectService(serviceName) {
+            const select = document.getElementById('service-select');
+            for(let i=0; i<select.options.length; i++) {
+                if(select.options[i].value === serviceName) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+
+        function sendWhatsApp(e) {
+            e.preventDefault();
+            const name = document.getElementById('client-name').value;
+            const service = document.getElementById('service-select').value;
+            const barber = document.getElementById('barber-select').value;
+            const dateStr = document.getElementById('booking-date').value;
+            const time = document.getElementById('booking-time').value;
+
+            // Validação de Domingo (0 = Domingo)
+            if (dateStr) {
+                const selectedDate = new Date(dateStr + 'T00:00:00');
+                if (selectedDate.getDay() === 0) {
+                    alert('A barbearia não abre aos domingos! Por favor, escolha outro dia.');
+                    return;
+                }
+            }
+            
+            const phone = "5511940810038";
+            const text = `Olá! Gostaria de agendar um horário na Barbearia Dom Pietro:%0A%0A*Nome:* ${encodeURIComponent(name)}%0A*Serviço:* ${encodeURIComponent(service)}%0A*Barbeiro:* ${encodeURIComponent(barber)}%0A*Data:* ${encodeURIComponent(dateStr)}%0A*Horário:* ${encodeURIComponent(time)}`;
+            window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+        }
+    </script>
+</body>
+</html>
